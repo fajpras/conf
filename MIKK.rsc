@@ -4,10 +4,10 @@
 #
 #
 /interface ethernet
-set [ find default-name=ether4 ] name=ether1-INTERNET
-set [ find default-name=ether1 ] name=ether2-VLAN
-set [ find default-name=ether2 ] name=WLAN-HOTSPOT
-set [ find default-name=ether3 ] name=ether4-REMOTE
+set [ find default-name=ether1 ] name=ether1-INTERNET
+set [ find default-name=ether2 ] name=ether2-VLAN
+set [ find default-name=ether3 ] name=WLAN-HOTSPOT
+set [ find default-name=ether4 ] name=ether4-REMOTE
 /interface vlan
 add interface=ether2-VLAN name=ADMIN vlan-id=10
 add interface=ether2-VLAN name=JARINGAN vlan-id=20
@@ -19,23 +19,6 @@ add name=dhcp_pool1 ranges=192.168.20.2-192.168.20.254
 /ip dhcp-server
 add address-pool=dhcp_pool0 disabled=no interface=ADMIN name=dhcp1
 add address-pool=dhcp_pool1 disabled=no interface=JARINGAN name=dhcp2
-/lora servers
-add address=eu.mikrotik.thethings.industries down-port=1700 name=TTN-EU \
-    up-port=1700
-add address=us.mikrotik.thethings.industries down-port=1700 name=TTN-US \
-    up-port=1700
-add address=eu1.cloud.thethings.industries down-port=1700 name=\
-    "TTS Cloud (eu1)" up-port=1700
-add address=nam1.cloud.thethings.industries down-port=1700 name=\
-    "TTS Cloud (nam1)" up-port=1700
-add address=au1.cloud.thethings.industries down-port=1700 name=\
-    "TTS Cloud (au1)" up-port=1700
-add address=eu1.cloud.thethings.network down-port=1700 name="TTN V3 (eu1)" \
-    up-port=1700
-add address=nam1.cloud.thethings.network down-port=1700 name="TTN V3 (nam1)" \
-    up-port=1700
-add address=au1.cloud.thethings.network down-port=1700 name="TTN V3 (au1)" \
-    up-port=1700
 /tool user-manager customer
 set admin access=\
     own-routers,own-users,own-profiles,own-limits,config-payment-gw
@@ -54,7 +37,7 @@ set allow-remote-requests=yes
 /ip firewall nat
 add action=masquerade chain=srcnat out-interface=ether1-INTERNET
 /system identity
-set name=RouterOS
+set name=ROUTER
 /system lcd
 set contrast=0 enabled=no port=parallel type=24x4
 /system lcd page
