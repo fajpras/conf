@@ -1,8 +1,4 @@
-# nov/27/2024 09:38:18 by RouterOS 6.49rc2
-# software id = UACQ-GH1L
-#
-#
-#
+
 /ip hotspot profile
 add dns-name=fajri.net hotspot-address=192.168.30.1 login-by=\
     http-chap,http-pap name=hsprof1
@@ -14,4 +10,4 @@ add address-pool=dhcp_pool2 name=GURU rate-limit=1m/1m
 add address-pool=dhcp_pool2 name=SISWA rate-limit=512k/512k
 /ip hotspot user
 add name=guru password=123 profile=GURU server=hotspot1
-add name=siswa password=123 server=hotspot1
+add name=siswa password=123 profile=SISWA server=hotspot1
