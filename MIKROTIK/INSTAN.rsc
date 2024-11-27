@@ -21,7 +21,7 @@ add address-pool=dhcp_pool0 disabled=no interface=ADMIN name=dhcp1
 add address-pool=dhcp_pool1 disabled=no interface=JARINGAN name=dhcp2
 add address-pool=dhcp_pool2 disabled=no interface=WLAN-HOTSPOT name=dhcp3
 /ip hotspot
-add address-pool=dhcp_pool2 disabled=no interface=WLAN-HOTSPOT name=hotspot1 \
+add address-pool=dhcp_pool2 disabled=no interface=WLAN-HOTSPOT name=HOTSPOT \
     profile=hsprof1
 /ip hotspot user profile
 add address-pool=dhcp_pool2 name=GURU rate-limit=1m/1m
@@ -51,8 +51,8 @@ add action=masquerade chain=srcnat comment="masquerade hotspot network" \
 add action=masquerade chain=srcnat comment="masquerade hotspot network" \
     src-address=192.168.30.0/24
 /ip hotspot user
-add name=guru password=123 profile=GURU server=hotspot1
-add name=siswa password=123 profile=SISWA server=hotspot1
+add name=guru password=123 profile=GURU server=HOTSPOT
+add name=siswa password=123 profile=SISWA server=HOTSPOT
 add name=admin password=admin
 /system identity
 set name=ROUTER
