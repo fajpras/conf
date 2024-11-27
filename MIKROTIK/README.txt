@@ -7,8 +7,8 @@
 3.--type system identity set name=ROUTER
 4.--open winbox version random
 5.--open IP>DHCP CLIENT>and ADD 'ether1' to make internet access
-6.--open terminal type ; tool fetch url=https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/MIKK.src
-7.--install another one ; tool fetch url=https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/SWIT.src
+6.--open terminal type ; tool fetch url=https://raw.githubusercontent.com/fajpras/CLI/MIKROTIK/MIKK.src
+7.--install another one ; tool fetch url=https://raw.githubusercontent.com/fajpras/CLI/MIKROTIK/SWIT.src
 8.--after done installed these file go delete the DHCP CLIEN
 9.--open terminal on winbox type; impor file-name=MIKK.rsc ENTER 
 10.--for ROUTER configuration is DONE 
