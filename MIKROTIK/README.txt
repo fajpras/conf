@@ -10,10 +10,10 @@
 6.--open terminal type ; tool fetch url=https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/MIKK.rsc
 7.--install another one ; tool fetch url=https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/SWIT.rsc
 
-https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/MIKK.rsc
-https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/SWIT.rsc
-https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/HOTT.rsc
-https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/INSTAN.rsc
+1.https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/MIKK.rsc
+1.https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/SWIT.rsc
+1.https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/HOTT.rsc
+1.https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/INSTAN.rsc
 
 
 8.--after done installed these file go delete the DHCP CLIEN
