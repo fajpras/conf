@@ -23,8 +23,7 @@ add address=192.168.20.1/24 interface=ADMIN network=192.168.20.0
 add address=192.168.30.1/24 interface=JARINGAN network=192.168.30.0
 /ip cloud
 set update-time=no
-/ip dhcp-client
-add disabled=no interface=ether1-INTERNET
+
 /ip dhcp-server network
 add address=192.168.20.0/24 gateway=192.168.20.1
 add address=192.168.30.0/24 gateway=192.168.30.1
