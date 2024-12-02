@@ -1,4 +1,4 @@
      
 ```
-tool fetch url=htpps://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/null.rsc
+tool fetch url=https://raw.githubusercontent.com/fajpras/conf/CLI/MIKROTIK/null.rsc
 ```
