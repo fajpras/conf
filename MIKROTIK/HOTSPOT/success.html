@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title id="title"></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="theme-color" content="#3B5998" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+<link rel="stylesheet" href="style.css">
+<!--$(if refresh-timeout)
+<script>
+	/**setTimeout(function(){
+	location.href = './status';
+	},1000)**/
+</script>
+$(endif)-->
+</head>
+<body>
+<div class="main"  style="">
+
+
+<div style="  " class="gede">FAN</div>	
+			<div style=" margin:-10px  0 -10px ;  height:30%;" class="gede1"> </div>
+			
+
+
+
+$(if login-by == 'trial')
+		<div style="margin-top:20px; font-size:40px; font-weight:bold;  text-align: center;"><h3>Welcome trial user</h3></div>
+	$(elif login-by != 'mac')
+		<div style="margin-top:10px; font-size:2em; font-weight:bold;  text-align: center;"><h3 style=" border-bottom:solid 4px #fff; padding-bottom:10px;">Welcome, <b id="user">$(username)</b></h3></div>
+$(endif)
+<h3 style="font-size:20px; font-weight:bold;">Anda telah terhubung di jaringan <b id="dname"></b></h3>
+<button style="width:50%"class="button" onclick="window.location='./status'"><i class="icon icon-check">&#xe807;</i> Check Status</buton>
+</div>
+<script type="text/javascript">
+	document.getElementById('title').innerHTML = window.location.hostname + " > success";	
+    document.getElementById('dname').innerHTML = window.location.hostname;	
+</script>
+</body>
+</html>
