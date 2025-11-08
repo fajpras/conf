@@ -24,5 +24,11 @@
 | 🧰 Lainnya | Git, VS Code, GitHub |
 
 
+### 🧑‍💻 Kontributor Proyek Ini
+
+Terima kasih untuk semua yang sudah ikut berkontribusi 🙌  
+Wajah para kontributor muncul otomatis di bawah ini:
+
+[![Contributors](https://contrib.rocks/image?repo=BintangDwiImamDermawan/pbl)](https://github.com/BintangDwiImamDermawan/pbl/graphs/contributors)
 
 
